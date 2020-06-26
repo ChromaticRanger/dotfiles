@@ -7,6 +7,9 @@
 
 [[ $- != *i* ]] && return
 
+# Activate VIM mode with escape
+set -o vi
+
 colors() {
 	local fgc bgc vals seq0
 
@@ -118,6 +121,10 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
+alias cls="clear"
+alias zathura="devour zathura"
+alias mpv="devour mpv"
+alias sxiv="devour sxiv"
 
 # Git aliases
 alias gs="gfr && git status "
