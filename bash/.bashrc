@@ -193,4 +193,8 @@ mkcd () {
   cd "$1"
 }
 
+pcd () {
+    cd "/home/martin/Projects/Gridsome/gridsome-typescript/"
+}
+
 

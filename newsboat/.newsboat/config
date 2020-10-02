@@ -1,5 +1,6 @@
 #show-read-feeds no
 auto-reload yes
+max-items 100
 
 external-url-viewer "urlscan -dc -r 'chromium {}'"
 
@@ -21,6 +22,15 @@ bind-key N prev-unread
 bind-key D pb-download
 bind-key U show-urls
 bind-key x pb-delete
+bind-key X delete-article
+
+download-path "~/Music/Podcasts/"
+player "devour mpv"
+
+confirm-exit yes
+tag-select-start yes
+show-title-bar yes
+show-read-feeds no
 
 color listnormal cyan default
 color listfocus black yellow standout bold

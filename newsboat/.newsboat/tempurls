@@ -1,9 +1,3 @@
-
-# Starred articles
-# ctrl-e to flag, s-enter to star it, to remove, ctr-e, delete the flag char
-"query:Starred:flags # \"s\""
-"query:Unread:unread = \"yes\""
-
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" "Linux"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~Brodie Robertson" "Linux"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCaXkIU1QidjPwiAYu6GcHjg "~MSNBC" "News"

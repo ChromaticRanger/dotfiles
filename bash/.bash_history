@@ -1,505 +1,505 @@
+gb
+gs
+ga "models/builders/minisudokubuilder.ts" 
+ga "models/builders/testgamebuilder.ts" 
+gs
+gcm "Amended game builder so they have white backgrounds and the main builder has real (if still hardcoded) data"
 cls
-tsc main.ts
-node main.js
-cls
-tsc main.ts
-node main.js
-cls
-tsc main.ts
-node main.js
-tsc main.ts
-node main.js
-cls
-tsc main.ts
-node main.js
-cls
-tsc main.ts
-node main.js
-tsc main.ts
-node main.js
-tsc main.ts
-node main.js
-node main.js
-tsc main.ts
-cls
-node main.js
-tsc main.ts
-cls
-node main.js
-tsc main.ts
-cls
-node main.js
-tsc main.ts
-cls
-node main.js
-tsc main.ts
-cls
-node main.js
-tsc main.ts
-cls
-node main.js
-tsc main.ts
-cls
-node main.js
-#tsc main.ts
-tsc main.ts
-#cls
-cls
-node main.js
-tsc main.ts
-cls
-node main.js
-exit
-nv
-vifm
-vifm
-blender
-snap
-snaps
-flatpak
-flatpak --list
-flatpak --help
-flatpak --help | less
-flatpak list
-flatpak --help | less
-flatpak update
-lbry
-flatpak run io.lbry.lbry-app 
-ymd
-myd
-ls
-pacman -Qe |less
-ytmdl
-tldr ytmdl
-cls
-ytmdl --help
-ytmdl --url https://music.youtube.com/playlist?list=OLAK5uy_l2a-m-HR606XITpP6VAQUa3Q8Utq7B00o
-ytmdl --url https://music.youtube.com/watch?v=41CjTbmI9aQ&feature=share
-ytmdl --artist 'Lady Gaga' --song 'Alice'
-ytmdl --song=Alice
-ytmdl --song 'Alice'
-ytmdl Alice
-exit
-nv
-nv
-exit
-ls
-cls
-vifm
-exit
-exit
-nv
-nv
-exit
-exit
-Projects/Typescript/AnagramCross/app
-ls
-cls
-tsc main.ts
-node main.js
-tsc main.ts
-node main.js
-tsc main.ts
-node main.js
-
-vifm
-exit
-vifm
-exit
-vifm
-exit
-nv
-exit
-nv
-exit
-nv
-nv
-ls
-cd vimwiki/
 gs
 gaa
 gs
-gcm "Updated AL-Anon Readings"
-gs
-git branch
-git branch -v
-pit push origin master
-git push origin master
+gcm "Made it so that fixed cells cannot be selected"
 cls
-git branch -v
 gs
-exit
-nv
-exit
-nv
-blender
-blender &
-ewxit
-exit
-yay blender
-exit
-nv
-pwd
-ls
-gs
-vimwiki
-ls
-nv update.sh 
-gs
-git add Blender.wiki 
-gs
-gcm "Added a section for Blender notes"
+git switch dev
+gb
+git merge only_activated_non_fixed 
+gb
+git branch -d only_activated_non_fixed 
+gb
 gs
 gaa
+gcm "Added a light purple color and made it the default for the minisudoku builder"
+cls
 gs
-gcm "Added more AL reading texts"
+cls
+gl
+cls
+git push origin dev
+exit
+pcd
+npm start
+exit
+mydate 10
+t
+exity
+exit
+exit
+vifm
+exit
+pcd
+npm test
+exit
+pcd
 gs
-git push origin master
+cls
 gs
-..
-pwd
+git add .
+cls
+gs
+gcm "Update component creation test and created a mock Mediator"
+gs
+git checkout -b set-neighbours
+cls
+gs
+gs
+exit
+pcd
+npm start
+exit
+pcd
+nv
+exit
+mydate 10
+exit
+exit
+npm test
+cls
+pcd
+npm test
+exit
+pcd
+nv
+exit
+pcd
+npm start
+exit
+pcd
+gs
+gl
+cls
+exit
+pcd
+gs
+cls
+vifm
+exit
+pcd
+nv
+exit
+pcd
+gs
+gb
+gd app.ts
+ga app.ts
+cls
+gs
+gd ../index.html 
+ga ../index.html 
+cls
+gs
+gd interfaces/IMediator.ts 
+ga interfaces/IMediator.ts 
+cls
+gs
+gd models/mediators/mock_mediator.ts 
+ga models/mediators/mock_mediator.ts 
+cls
+gs
+gd utility.ts 
+cls
+gs
+gaa
+cls
+gs
+gb
+gcm "Added neighbours to cells during builder scaffolding, and added keybard navigation of cells on the board."
+cls
+gs
+git switch dev
+git merge set-neighbours 
+gb
+git branch -d set-neighbours 
 cls
 ls
-dotfiles
-ls
-gs
-git diff .bashrc
-git diff
-ls -la
-cd bash
-ls
-ls -la
-gs
-..
-ls -la
-~
-pwd
 cls
+gs
+git push origin dev
+gs
+cls
+git checkout -b cleanup
+gb
+gs
+git push origin cleanup
+gs
+gaa
+cls
+gs
+gs
+gaa
+cls
+gs
+gcm "Delted a heap of old code and had a general tidy up"
+cls
+gs
+git push origin cleanup
+gb
+gs
+git fetch origin dev
+cls
+gs
+git switch dev
+gs
+git fetch origin dev
+gs
+gb
+git pull origin dev
+cls
+gs
+gb
+git branch -d cleanup 
+cls
+gs
+gb
+gs
+gaa
+gcm "Added a thicker border to the canvas"
+cls
+gs
+gs
+gs
+gd app.ts 
+cls
+gs
+ga app.ts 
+gaa
+gcm "Passing data into the builder"
+gs
+git push origin dev
+cls
+gs
+gs
+gs
+gaa
+gcm "Added ascii for 1,2,3 and 4 to utility class"
+git push origin dev
+cls
+gl
+cls
+gs
+ga utility.ts 
+gs
+gcm "Updated utility keycodes as I had used ascii text values by mistake and not keycodes"
+gs
+gd models/mediators/minisudoku_mediator.ts 
+gaa
+gcm "Added keyhandlers for number entry"
+cls
+gs
+git push origin dev
+exit
+pcd
+mydate 10
+cls
+npm start
+exit
+pcd
+npm test
+exit
+mydate 9
+t
+exit
+afplay
+exit
+pcd
+gs
+gd utility.ts 
+gl
+cls
+gf
+gd
+gaa
+gs
+gcm "Added VIM keys for navigating mini sudoku board, and updated mediator with handling code"
+cls
+gs
+gb
+git push origin dev
+cls
+gs
+git status -v
+cls
+gs
+git status
+nv
+nv
+exit
+exit
+node
+cls
+node
+exit
+pcd
+npm test
+exit
+gs
+pcd
+cls
+gs
+gs
+gs
+ls
+..
+ls
+nv README.md 
+gpr
+pcd
+app
+cls
+gpr
+nv
+git pull origin dev
+..
+nv README.md 
+app
+cls
+gs
+gb
+git checkout -b for-loop-builder
+gb
+gs
+gaa
+gcm "Completed user values entry. A board can now be navigated and completed"
+cls
+gs
+gb
+git switch dev
+git merge for-loop-builder 
+gs
+gb
+git branch -d for-loop-builder 
+cls
+git push origin dev
+cls
+exit
+pcd
+npm start
+exit
+pcd
+nv
+exit
+mydate 9
+cls
+exit
+nv
+exit
+pcd && npm test
+exit
+pcd
+gs
+gb
+exit
+pcd
+npm start
+exit
+pcd
+nv
+exit
+vifm
+exit
+mydate 9
+exit
+exit
+exit
+node -v
+exit
+pcd
+nv
+exit
+pcd
+gs
+yarn
+yay yarn
+cl
+cls
+exit
+pcd
+npm start
+exit
+pcd
+npm test
+exit
+mydate 9
 exit
 sudo pacman -Syu
-cls
-yay godot
+reboot
+mydate 10
 exit
-nv
-cd vimwiki
-ls
-nv
-ls
-rm Template.wiki 
-cls
+exit
+npm -v
+node -v
+yarn -v
+yay yarn
+exit
+pcd
 gs
-git add Readings.wiki 
-git add Template.wiki 
-gs
-gcm "Removed the template link and added text to the Readings page"
-gs
-gaa
+gd app.ts
+gb
 cls
-gs
-gcm "Added entry for 21-Jun"
-gs
-git push origin master
+npm install -g yarn
+sudo npm install -g yarn
 cls
-exit
-vifm
-exigt
-exit
-godot
-godot
-exit
-nv
-ls
-vimwiki
-ls
-nv '== The Twelve Steps ==.wiki' 
+yarn -v
+npm install -g yarn
+sudo npm install -g yarn
+sudo npm install -g npm
 cls
-ls -la
-rm '==The Twelve Steps==.wiki' 
-cls
-ls -la
-cp '== The Twelve Steps ==.wiki' 'The Twelve Steps.wiki'
-ls
-nv
-ls
-rm '== The Twelve Steps ==.wiki' 
+sudo npm install -g yarn
+yarn --version
 cls
 ls
-nv
-cls
-gs
-git add 22-Jun.wiki 
-cls
-gs
-gcm "Added reading for 22-Jun"
-cls
-gs
-git add 'The Twelve Steps.wiki' 
-gcm "Put the 12 Steps in their own page"
-cls
-gs
-gaa
-gcm "Added the date to each reading page"
-cls
-gs
-git log
-cls
-git push origin master
-gs
-cls
-exit
-nv
-nv
-nv
-nv
-exit
-nv
-vimwiki/
-gs
-gaa
-gs
-gcm "Added Reading for 23-JUN"
-cls
-gs
-git push
-cls
-gs
-exit
-history | grep git
-Projects/
-Bash
-ls
-git clone git@github.com:sandervanvugt/cool-bash.git
-ls
-cool-bash/
-cls
-ls
-exit
-select dir in /bin; select dir in /bin
-exit
-cat /etc/profile
-nv /etc/profile
-exit
-exit
-ls
-Projects/
-ls
-mkdir Bash
-cd Bash/
-cls
-ls
-nv
-exit
-df ~/_SanDisk/
-df ~/_BigDrive/Video/
-du ~/_BigDrive/Video/
-du -h ~/_BigDrive/Video/
-exit
-umount ~/_BigDrive 
-sudo umount ~/_BigDrive 
-ls
-exit
-vifm
-exit
-vifm
-exit
-vifm
-sudo vifm
-exit
-vifm
-exit
-godot
-godot
-exit
-nv
-nv
-nv
-exit
-ls
-Documents/
-ls
-Money/
-ls
-zathura Amex\ Statement_Jun\ 2020.pdf 
-z
-zat
-cls
-ls -la
-yay xdo
-~
-sudo pacman -S xdo
-cls
-xdo
-xdo close
-exit
-pwd
-man xdo
-Projects/
-ls
-mkdir 3rd-Party-Repos
-ls
-cls
-ls
-cd 3rd-Party-Repos/
-git clone git@github.com:salman-abedin/devour.git
-ls
-cd devour/
-cls
-ls -la
-./devour.sh zathura ~/Documents/Money/Amex\ Statement_Jun\ 2020.pdf 
-./devour zathura ~/Documents/Money/Amex\ Statement_Jun\ 2020.pdf 
-./devour.sh zathura ~/Documents/Money/Amex\ Statement_Jun\ 2020.pdf 
-cd ~/.local/bin/
-ls
-cp ~/Projects/3rd-Party-Repos/devour/devour.sh .
-ls
-mv devour.sh devour
-ls -la
-devour
-~
-exit
-nv
-exit
-ls
-Videos/
-ls
-~
-ls
-_SanDisk/
-ls
-Video/
-ls
-TV
+..
+..
 ls
 ..
 ls
-Visual\ Arts\ P5/
-ls
-mpv S1L5.mp4 
-mpv
-devour mpv S1L5.mp4 
-exit
-zathura ~/Documents/Money/Amex\ Statement_Jun\ 2020.pdf 
-nv
-exit
-mpv
-man mpv
-ffmpeg
-vifm
-cls
-yay mpv
-sudo pacman -S mpv
-mpv
-_SanDisk/Video/
-ls
-Visual\ Arts\ P5/
-ls
-mpv S7L6.mp4 
-nv
-exit
-_SanDisk/Video/Visual\ Arts\ P5/
-ls
-mpv S4L5.mp4 
-mpv S4L6.mp4 
-exit
-ln -s ~/_SanDisk/Music/ ~/Music/
-exit
-ln -s ~/_SanDisk/Music/ ~/Music/
-ln -s ~/_SanDisk/Music/ ~/Music
-exit
+mkdir Gridsome
 cls
 ls
-mpv 01-19\ -\ Tomorrow\ Is\ Yesterday.mp4 
-exit
-vifm
-ln -s ~/Music/ ~/_SanDisk/Music/
-vifm
-exit
-ln -s ~/Videos/ ~/_SanDisk/Video/
-exit
-ln -s ~/Pictures/ ~/_SanDisk/Pictures/
-exit
-ln -s ~/_SanDisk/Pictures/ ~/Pictures
-exit
-ln -s ~/_SanDisk/Video/ ~/Video
-vifm
-exit
-vifm
-vifm
-exit
-vifm
+Gridsome/
 cls
-nv
-vimwiki
-gs
-git add 23-Jun.wiki Readings.wiki 
+ls
+lsl
+lsa
+cls
+yarn global add @gridsome/cli
+gridsome -v
+gridsome create gridsome-typscript
+exit
+gridsome -v
+gridsome create gridsome-typscript
+yarn global add @gridsome/cli
+gridsome
+npm install --global @gridsome/cli
+sudo npm install --global @gridsome/cli
+gridsome -v
+cls
+Projects/
+Gridsome/
+cls
+gridsome create gridsome-typscript
+ls
+cd gridsome-typscript/
+ls
 cls
 gs
-gcm "Added Reading for 23-JUN"
+ls
+touch .gitignore
+nv .gitignore 
+gs
+git init
 cls
 gs
-git push origin master
-cls
+git status
+gs
+nv
 ~
 exit
+pcd
 ls
-zathura Registration\ Pack\ incl\ medical\ questionnaire\ July\ 2019.pdf 
-zathura GMS1.pdf 
-ls *.pdf
-exit
-vifm
-exit
-newsboat
-exit
-nv urls
-newsboat
-cls
-ls -la
-nv config
-ls -la
-nv config 
-newsboat
-nv config 
-exit
-chrome
-chromium
-exit
-newsboat
-sudo pacman -S newsboat
-newsboat
-vifm
-exit
-newsboat
+Projects/
+ls
 nv
+cls
+exit
+pcd
+nv
+exit
+pcd
+nv
+exit
+pcd
+nv
+exit
+pcd
+nv
+exit
+pcd
+pwd
+Projects/
+Gridsome/
+gridsome-typscript/
+pwd
+nv
+exit
+pcd
+cd /home/martin
+cd /home/martin/Projects/
+~
+cd /home/martin/Projects/Gridsome/gridsome-typscript/
+cls
 ls
-nv urls
-newsboat
-nv urls
-newsboat
-nv config
+gs
+cls
+git status
+gaa
+git status
+gcm "Initialised after gridsome create"
+cls
+git status
+git status
+nv package.json 
+git status
+gd gridsome.config.js 
+cls
+git status
+gaa
+cls
+git status
+git status
+gaa
+git status
+gcm "Manually updated to use typescript"
+cls
+git status
+git status
+gaa
+git status
+gcm "Update title"
+cls
+gs
+git remote -v
+git status
+gb
+git checkout -b dev
+git status
+ifconfig
+ipconfig
+if-config
+cls
+git status
+git switch master
+it status
+git status
+git merge dev
+git remote add origin git@github.com:ChromaticRanger/gridsome-test.git
+git branch -M main
+git push -u origin main
+gs
+git remote
+nv
 exit
-vifm
+pcd
+Projects/Gridsome/gridsome-typscript/
+gs
+git remotes
+git remote
+git status
+nv
+gs
 exit
-man setsid
-exit
-exit
-ls -la
-.newsboat/
-ls
-nv config
-newsboat
-nv config
-newsboat
-nv config
-newsboat
-newsboat
-newsboat
-newsboat
-exit
-.newsboat/
-nv urls
-exit
-stow newsboat
-ls
-exit
-stow newsboat
+gs
+git status
+nv
+gs
 exit
