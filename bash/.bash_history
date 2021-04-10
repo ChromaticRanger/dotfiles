@@ -1,505 +1,500 @@
-gb
-gs
-ga "models/builders/minisudokubuilder.ts" 
-ga "models/builders/testgamebuilder.ts" 
-gs
-gcm "Amended game builder so they have white backgrounds and the main builder has real (if still hardcoded) data"
+firebase --version
 cls
-gs
-gaa
-gs
-gcm "Made it so that fixed cells cannot be selected"
-cls
-gs
-git switch dev
-gb
-git merge only_activated_non_fixed 
-gb
-git branch -d only_activated_non_fixed 
-gb
-gs
-gaa
-gcm "Added a light purple color and made it the default for the minisudoku builder"
-cls
-gs
-cls
-gl
-cls
-git push origin dev
-exit
-pcd
-npm start
-exit
-mydate 10
-t
-exity
-exit
-exit
-vifm
-exit
-pcd
-npm test
-exit
-pcd
-gs
-cls
-gs
-git add .
-cls
-gs
-gcm "Update component creation test and created a mock Mediator"
-gs
-git checkout -b set-neighbours
-cls
-gs
-gs
-exit
-pcd
-npm start
-exit
 pcd
 nv
 exit
-mydate 10
-exit
-exit
-npm test
+valeran
+valeron
+paru veloren
+yay
+paru
+paru yarn-1.22.10.1
+paru yarn-1.22.10-1
+yay yarn-1.22.10-1
+pacman -S yarn-1.22.10-1
+sudo pacman -S yarn-1.22.10-1
+paru yarn
+tldr paru
+paru -Si
+paru -Sua
 cls
-pcd
-npm test
-exit
-pcd
-nv
-exit
-pcd
-npm start
-exit
-pcd
-gs
-gl
-cls
-exit
-pcd
-gs
-cls
-vifm
-exit
-pcd
-nv
-exit
-pcd
-gs
-gb
-gd app.ts
-ga app.ts
-cls
-gs
-gd ../index.html 
-ga ../index.html 
-cls
-gs
-gd interfaces/IMediator.ts 
-ga interfaces/IMediator.ts 
-cls
-gs
-gd models/mediators/mock_mediator.ts 
-ga models/mediators/mock_mediator.ts 
-cls
-gs
-gd utility.ts 
-cls
-gs
-gaa
-cls
-gs
-gb
-gcm "Added neighbours to cells during builder scaffolding, and added keybard navigation of cells on the board."
-cls
-gs
-git switch dev
-git merge set-neighbours 
-gb
-git branch -d set-neighbours 
-cls
-ls
-cls
-gs
-git push origin dev
-gs
-cls
-git checkout -b cleanup
-gb
-gs
-git push origin cleanup
-gs
-gaa
-cls
-gs
-gs
-gaa
-cls
-gs
-gcm "Delted a heap of old code and had a general tidy up"
-cls
-gs
-git push origin cleanup
-gb
-gs
-git fetch origin dev
-cls
-gs
-git switch dev
-gs
-git fetch origin dev
-gs
-gb
-git pull origin dev
-cls
-gs
-gb
-git branch -d cleanup 
-cls
-gs
-gb
-gs
-gaa
-gcm "Added a thicker border to the canvas"
-cls
-gs
-gs
-gs
-gd app.ts 
-cls
-gs
-ga app.ts 
-gaa
-gcm "Passing data into the builder"
-gs
-git push origin dev
-cls
-gs
-gs
-gs
-gaa
-gcm "Added ascii for 1,2,3 and 4 to utility class"
-git push origin dev
-cls
-gl
-cls
-gs
-ga utility.ts 
-gs
-gcm "Updated utility keycodes as I had used ascii text values by mistake and not keycodes"
-gs
-gd models/mediators/minisudoku_mediator.ts 
-gaa
-gcm "Added keyhandlers for number entry"
-cls
-gs
-git push origin dev
-exit
-pcd
-mydate 10
-cls
-npm start
-exit
-pcd
-npm test
-exit
-mydate 9
-t
-exit
-afplay
-exit
-pcd
-gs
-gd utility.ts 
-gl
-cls
-gf
-gd
-gaa
-gs
-gcm "Added VIM keys for navigating mini sudoku board, and updated mediator with handling code"
-cls
-gs
-gb
-git push origin dev
-cls
-gs
-git status -v
-cls
-gs
-git status
-nv
-nv
-exit
-exit
-node
-cls
-node
-exit
-pcd
-npm test
-exit
-gs
-pcd
-cls
-gs
-gs
-gs
-ls
-..
-ls
-nv README.md 
-gpr
-pcd
-app
-cls
-gpr
-nv
-git pull origin dev
-..
-nv README.md 
-app
-cls
-gs
-gb
-git checkout -b for-loop-builder
-gb
-gs
-gaa
-gcm "Completed user values entry. A board can now be navigated and completed"
-cls
-gs
-gb
-git switch dev
-git merge for-loop-builder 
-gs
-gb
-git branch -d for-loop-builder 
-cls
-git push origin dev
-cls
-exit
-pcd
-npm start
-exit
-pcd
-nv
-exit
-mydate 9
-cls
-exit
-nv
-exit
-pcd && npm test
-exit
-pcd
-gs
-gb
-exit
-pcd
-npm start
-exit
-pcd
-nv
-exit
-vifm
-exit
-mydate 9
-exit
-exit
-exit
-node -v
-exit
-pcd
-nv
-exit
-pcd
-gs
-yarn
-yay yarn
-cl
-cls
-exit
-pcd
-npm start
-exit
-pcd
-npm test
-exit
-mydate 9
-exit
+paru
+pacman -Syu
 sudo pacman -Syu
-reboot
-mydate 10
+yay
+paru ytmdl
+paru ytmdl
+tldr paru
+man paru
+cls
+tldr pacman
+npm -v
 exit
-exit
+paru -L
+paru --clean
+cls
+paru
+paru -R songrec-0.1.6-1
+pacman -R songrec-0.1.6-1
+sudo pacman -R songrec-0.1.6-1
+paru -L
+cls
+paru --complete
+paru -c
+paru -w
+paru -w
+paru --news
+paru -l
+paru -h
+paru -h |less
+paru -Ss songrec-0.1.6-1
+paru -Si songrec-0.1.6-1
+paru -Si songrec
+paru -R songrec
+paru -c
+paru -l
+paru -p
+paru --list
+pacman --list
+tldr pacman
+tldr yay
+yay -Ps
+yay -Rns wesnoth
+cls
+yay -Ps
+yay -Rns chromium
+yay -Ps
+cls
+paru
+paru -Si ytmdl
+paru -Si youtube-dl
+tldr pacman
+pacman -Q
+pacman -Q | grep ^a
+pacman -Q | grep ^b
+pacman -Q | grep ^b | word
+pacman -Q | grep ^b | wc
+tldr wc
+pacman -Q | grep ^b | wc -w
+pacman -Q | grep ^a | wc -w
+pacman -Q | wc -w
+neofetch
+pacman -Qe | wc -w
+pacman -Scc
+sudo pacman -Scc
+pacman -Qe | wc -w
+pacman -Qe
+pacman -Qe | grep ^a
+pacman -Qo android-tools
+paru Si android-tools
+pacman -Rs android-tools
+sudo pacman -Rs android-tools
+pacman -Qe | grep ^v
+sudo pacman -Rs vlc
+pacman -Qe | grep ^a
+asciidoctor
+man asciidoctor
+pacman -Qe | grep ^b
+sudo pacman -Rs bpytop
+pacman -Qe | grep ^b
+pacman -Qe | grep ^c
+pacman -Qe | grep ^d
+duf
+pacman -Qe | grep ^e
+pacman -Qe | grep ^f
+figlet hello
+man flex
+man file
+ls
+file vimgolf
+cls
+pacman -Qe | grep ^g
+sudo pacman -Rs godot
+cls
+duf
+mydate 23
+_mntod
+vifm
+cls
+duf
+cls
+pacman -Qe | grep ^h
+pacman -Qe | grep ^i
+pacman -Qe | grep ^j
+pacman -Qe | grep ^k
+pacman -Qe | grep ^l
+man lsd
+lsd
+tldr lsd
+cls
+pacman -Qe | grep ^m
+sudo pacman -Rs mongodb-bin-4.0
+moc
+tldr moc
+man moc
+man mpv
+pacman -Qe | grep ^m
+man mousepad
+cls
+pacman -Qe | grep ^n
+nano
+sudo pacman -Rs nano
+cls
+pacman -Qe | grep ^n
+npm -v
+sudo pacman -Rs np
+cls
 npm -v
 node -v
-yarn -v
-yay yarn
+pacman -Qe | grep ^n
+npm install npm@latest
+pacman -Qe | grep ^n
+nvm
+nvm install node
+node -v
+npm
+cls
+npm -v
+npm install npm@7.8.0
+npm -v
+npm -g list
+npm install npm@latest
+npm -v
+exit
+npm -v
+pacman -Qe | grep ^o
+pacman -Qe | grep ^p
+powertop
+sudo powertop
+pacman -Qe | grep ^q
+pacman -Qe | grep ^r
+rofi
+rofi -show window
+rofi -show run
+rofi -show ssh
+pacman -Qe | grep ^r
+pacman -Qe | grep ^s
+sudo pacman -Rs sxiv-rifle
+pacman -Qe | grep ^s
+sxiv .
+pacman -Qe | grep ^t
+tree
+pacman -Qe | grep ^u
+pacman -Qe | grep ^v
+pacman -Qe | grep ^w
+pacman -Qe | grep ^x
+mzn xz
+tldr xz
+pacman -Qe | grep ^x
+pacman -Qe | grep ^y
+ytmdl
+ytmdl 'blinding lights'
+pacman -Qe | grep ^y
+pacman -Qe | grep ^z
+man zensu
+tldr zensu
+zensu
+paru
+paru -S paru
+cargo
+paru -S cargo
+paru -S paru
+paru -S rust
+paru
+paru -S ytmdl
+rustup toolchain list
+rustup install stable
+rustup default stable
+paru -S paru
+paru
+sudo pacman -Rs ytmdl
+paru
+paru ytmdl
+exit
+node --version
+npm --version
+npm -g --version
+npm list
+npm -g list
+nvm list
+nvm install latest
+nvm install node
+nvm install --latest-npm
+npm list
+npm -g list
+exit
+npm --version
+nvm
+tldr nvm
+exit
+Apps
+./LBRY_0.50.2.AppImage 
+exit
+mydate 12
+exit
+vifm
+exit
+history | grep pacman
+pacman -Qe | grep ^v
+paru veloran
+paru veloren
+exit
+htop
+exit
+mydate 15
+exit
+flatpak install flathub net.veloren.veloren
+tldr flatpak
+flatpak run net.veloren.veloren 
 exit
 pcd
-gs
-gd app.ts
-gb
-cls
-npm install -g yarn
-sudo npm install -g yarn
-cls
-yarn -v
-npm install -g yarn
-sudo npm install -g yarn
-sudo npm install -g npm
-cls
-sudo npm install -g yarn
-yarn --version
-cls
-ls
-..
-..
-ls
-..
-ls
-mkdir Gridsome
-cls
-ls
-Gridsome/
-cls
-ls
-lsl
-lsa
-cls
-yarn global add @gridsome/cli
-gridsome -v
-gridsome create gridsome-typscript
+npm run serve
+npm run serve
+npm run serve
 exit
-gridsome -v
-gridsome create gridsome-typscript
-yarn global add @gridsome/cli
-gridsome
-npm install --global @gridsome/cli
-sudo npm install --global @gridsome/cli
-gridsome -v
+pcd
+nv
+exit
+valeron
+flatpak run net.veloren.veloren 
+flatpak run net.veloren.veloren 
+exit
+paru ytfzf
 cls
-Projects/
-Gridsome/
-cls
-gridsome create gridsome-typscript
+ytfzf
+pacman -Qe | grep ^v
+pacman -Qe | grep ^f
+paru ytfzf
+tldr ytfzf
+man ytfzf
+which ytfzf
+ytfzf -h
+ytfzf -v
+exit
+ytfzf
+paru fzf
+paru fzf | less
+paru fzf
+exit
+vifm
+exit
+mydate 23
+exit
+ytfzf
+tldr ytfzf
+man ytfzf
+ytfzf -h
+ytfzf -t Google Auth
+paru -Si ueberzug
+paru ueberzug
+ytfzf -t Google Auth
+ytfzf -t Google Auth
+ytfzf -t Google Firebase Auth Vue
+ytfzf -t Google Firebase Auth Vue
+ytfzf -h
+ytfzf -t --preview-side=bottom firebase
+ytfzf -t --preview-side=bottom -l firebase
+ytfzf -t --preview-side=bottom tits
+ytfzf -t --preview-side=bottom -l firebase
+ytfzf -h
+ytfzf -D
+ytfzf -t --preview-side=bottom -N firebase
+ytfzf -H
+ytfzf -h
+ytfzf -m ac/dc
+paru youtube-dl
+paru youtube-dl | less
+paru youtube-dl
+ytfzf -m ac/dc
+ytfzf ac/dc
+ytfzf ac/dc
+exit
+amforma
+amfora
+time
+uptime
+exit
+mydate 13
+exit
+Apps
 ls
-cd gridsome-typscript/
-ls
-cls
-gs
-ls
-touch .gitignore
-nv .gitignore 
-gs
-git init
-cls
-gs
+./LBRY_0.50.2.AppImage 
+exit
+nv
+exit
 git status
-gs
-nv
-~
 exit
-pcd
+npm install @mermaid-js/mermaid-cli
 ls
-Projects/
+ls -la
+mmdc
+..
 ls
-nv
+ls -la
+mermaid
+mmdc -h
+Mermaid/
 cls
+npx -p @mermaid-js/mermaid-cli mmdc -h
+npm remove @mermaid-js/mermaid-cli
+cls
+npm install @mermaid-js/mermaid-cli ./node_modules/.bin/mmdc -h
+npx -p @mermaid-js/mermaid-cli mmdc -h
+tldr mmds
+tldr mmdc
 exit
-pcd
-nv
+ls
+cp Registration.md Registration.mmd
+ls
+mmdc
+npx -p @mermaid-js/mermaid-cli mmdc -i Registration.mmd -o Registration.svg
+ls
+bat Registration.svg
+cls
+ls
+rm *.svg
+rm Registration.md
+nv Registration.mmd 
+nv Registration.mmd 
+npx -p @mermaid-js/mermaid-cli mmdc -i Registration.mmd -o Registration.svg
+ls
+rm *.svg
+ls
+nv Registration.mmd 
+npx -p @mermaid-js/mermaid-cli mmdc -i Registration.mmd -o Registration.svg
 exit
-pcd
-nv
+vifm
 exit
-pcd
-nv
+git status
+git log
 exit
-pcd
-nv
+aplay
+aplay -L
+aplay -L |less
+speaker-test -Dhdmi:NVidia -c 6
+aplay -L |less
+speaker-test -Djack -c 6
+aplay -L |less
+speaker-test -DDefault:loopback -c 6
+aplay -L |less
+speaker-test -Dpulse -c 6
+alsamixer
+alsamixer
+asoundconf
+yay asoundconf
+asoundconf
+asoundconf list
+asoundconf list
+asoundconf list-all
 exit
-pcd
+newsboat
+ls -la
+ls | grep news
+ls | grep newsboat
+.config/
+ls | grep newsboat
+ls
+newsboat
+..
+.local
+ls
+..
+stow
+ls -la | less
+nv .newsboat
+ls -la n*
 pwd
-Projects/
-Gridsome/
-gridsome-typscript/
-pwd
-nv
-exit
-pcd
-cd /home/martin
-cd /home/martin/Projects/
-~
-cd /home/martin/Projects/Gridsome/gridsome-typscript/
-cls
+@types
+ls -la
+ls -la |more
+.config
+ls -la |more
+which newsboat
+/usr/local/bin/
 ls
-gs
-cls
-git status
-gaa
-git status
-gcm "Initialised after gridsome create"
-cls
-git status
-git status
-nv package.json 
-git status
-gd gridsome.config.js 
-cls
-git status
-gaa
-cls
-git status
-git status
-gaa
-git status
-gcm "Manually updated to use typescript"
-cls
-git status
-git status
-gaa
-git status
-gcm "Update title"
-cls
-gs
-git remote -v
-git status
-gb
-git checkout -b dev
-git status
-ifconfig
-ipconfig
-if-config
-cls
-git status
-git switch master
-it status
-git status
-git merge dev
-git remote add origin git@github.com:ChromaticRanger/gridsome-test.git
-git branch -M main
-git push -u origin main
-gs
-git remote
+newsboat
+~
+paru newsboat
+newsboat
+exit
+bat /proc/asound/cards
+amixer
+speaker-test -c 2
+tldr speaker-test
+man speaker-test
+exit
+pcd
 nv
 exit
 pcd
-Projects/Gridsome/gridsome-typscript/
-gs
-git remotes
-git remote
-git status
-nv
-gs
+npm run serve
 exit
-gs
-git status
+pcd
 nv
-gs
+exit
+pcd
+npm run serve
+exit
+vifm
+exit
+fsblk
+lsdev
+lsblk
+lsblk
+lsblk -v
+tldr lsblk
+lsblk -f
+lsblk -i
+du
+df
+df
+tldr du
+df
+tldr df
+df -h
+lsblk
+gparted
+exit
+exit
+exit
+vifm
+exit
+lsblk
+lsblk
+tldr mount
+mount
+tldr mount
+lsblk
+lsblk
+exit
+ls
+..
+Apps
+ls
+..
+ls
+Downloads/
+ls
+mkdir Etcher
+mv balena-etcher-electron-1.5.116-linux-x64.zip Etcher/
+Etcher/
+ls
+unzip balena-etcher-electron-1.5.116-linux-x64.zip 
+ls
+rm balena-etcher-electron-1.5.116-linux-x64.zip 
+mv balenaEtcher-1.5.116-x64.AppImage ~/Apps/
+..
+..
+ls
+Downloads/
+ls
+ls ../Apps/
+rmdir Etcher/
+ls
+pwd
+../Apps/
+ls -la
+./balenaEtcher-1.5.116-x64.AppImage 
+exit
+vifm
 exit

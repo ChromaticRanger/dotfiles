@@ -10,6 +10,10 @@
 # Activate VIM mode with escape
 set -o vi
 
+# EXPORTS
+export BROWSER=/usr/bin/brave
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 colors() {
 	local fgc bgc vals seq0
 
@@ -134,8 +138,8 @@ alias gb="git branch "
 alias gc="git commit "
 alias gcm="git commit -m "
 alias go="git checkout "
-alias gpr="git push origin master "
-alias gfr="git fetch origin master "
+alias gpr="git push origin main "
+alias gfr="git fetch origin main "
 alias ga!="gaa && gcm "
 alias ga!p="ga! && gpr"
 alias gl="git log"
@@ -194,7 +198,14 @@ mkcd () {
 }
 
 pcd () {
-    cd "/home/martin/Projects/Gridsome/gridsome-typescript/"
+    cd "/home/martin/Projects/Vue/Work/PuzzleBouts"
 }
 
 
+# DIFF_TIME=$(awk 'BEGIN { print strftime("%H",systime()) }')
+# REAL_TIME=$(($DIFF_TIME - 1))
+# mydate $REAL_TIME
+
+eval "$(starship init bash)"
+
+source /usr/share/nvm/init-nvm.sh

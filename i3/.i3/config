@@ -26,8 +26,8 @@ font xft:URWGothic-Book 11
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec terminal
+# start a alacritty
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -43,7 +43,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -55,11 +55,10 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
 bindsym $mod+F1 exec create # create sets laptop and monitor above layout
-bindsym $mod+w exec chromium
-bindsym $mod+v exec --no-startup-id vifm
-bindsym $mod+m exec terminal -e 'mocp'
+bindsym $mod+w exec brave
+bindsym $mod+m exec alacritty -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -126,14 +125,14 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 Browser
-set $ws2 Code
-set $ws3 Build
-set $ws4 Tests
-set $ws5 Output
-set $ws6 Music
-set $ws7 Files
-set $ws8 Misc
+set $ws1 Misc-1
+set $ws2 Browser-2
+set $ws3 Code-3
+set $ws4 Build-4
+set $ws5 Tests-5
+set $ws6 Output-6
+set $ws7 Music-7
+set $ws8 Files-8
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -244,7 +243,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id i3lock -i ~/Pictures/lock3.png -p default -t
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -258,18 +257,18 @@ exec --no-startup-id clipit
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 30 -locker i3lock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
-# Color palette used for the terminal ( ~/.Xresources file )
+# Color palette used for the alacritty ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
 # Change the variable name at the place you want to match the color
-# of your terminal like this:
+# of your alacritty like this:
 # [example]
 # If you want your bar to have the same background color as your 
-# terminal background change the line 362 from:
+# alacritty background change the line 362 from:
 # background #14191D
 # to:
 # background $term_background
