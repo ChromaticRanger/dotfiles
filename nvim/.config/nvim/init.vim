@@ -153,7 +153,6 @@ let g:startify_custom_header = [
         \]
 
 let g:startify_bookmarks = [
-            \ { 'i': '~/.i3/config' },
             \ { 'n': '~/.config/nvim/init.vim' },
             \ { 'b': '~/.bashrc' },
             \ { 't': '~/.telescope-shortcuts' },
@@ -192,10 +191,10 @@ nnoremap <silent> ga    <cmd>Lspsaga code_action<CR>
 xnoremap <silent> ga    <cmd>Lspsaga range_code_action<CR>
 nnoremap <silent> gs    <cmd>Lspsaga signature_help<CR>
 
-lua <<EOF
-require("lsp")
-require("treesitter")
-require("statusbar")
-require("completion")
-EOF
+"lua <<EOF
+"require("lsp")
+"require("treesitter")
+"require("statusbar")
+"require("completion")
+"EOF
 
