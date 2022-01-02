@@ -156,6 +156,7 @@ let g:startify_bookmarks = [
             \ { 'n': '~/.config/nvim/init.vim' },
             \ { 'b': '~/.bashrc' },
             \ { 't': '~/.telescope-shortcuts' },
+            \ { 'x': '~/.xmonad/xmonad.hs' },
             \ ]
 
 nnoremap <leader>tt :20new term://bash<CR>
