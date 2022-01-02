@@ -126,9 +126,9 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 alias cls="clear"
-alias zathura="devour zathura"
-alias mpv="devour mpv"
-alias sxiv="devour sxiv"
+alias zathura="zathura"
+alias mpv="mpv"
+alias sxiv="sxiv"
 
 # Git aliases
 alias gs="gfr && git status "
