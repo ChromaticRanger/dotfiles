@@ -18,6 +18,7 @@ syntax on
 set encoding=utf-8
 set nu
 set relativenumber
+set numberwidth=4
 set textwidth=80
 set wrap
 set ruler
@@ -25,6 +26,8 @@ set matchpairs+=<:>,{:},(:),[:]
 set ignorecase
 set smartcase
 set incsearch
+
+set hidden
 
 set tabstop=2 softtabstop=2
 set shiftwidth=2
@@ -43,6 +46,8 @@ set splitbelow splitright
 
 set termguicolors
 
+set noshowmode
+
 "set colorcolumn=80
 "highlight ColorColumn ctermbg=Yellow guibg=Yellow
 
@@ -50,36 +55,49 @@ set termguicolors
 " Vim Plugins
 " ------------
 call plug#begin()
-    Plug 'morhetz/gruvbox'
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-lua/popup.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
-"{{ Productivity }}
-    Plug 'vimwiki/vimwiki'
+
+"{{ Color Scheme }}
+  Plug 'morhetz/gruvbox'
+  Plug 'itchyny/lightline.vim'
+
+"{{ Other Stuff }}
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-lua/popup.nvim'
+
+"{{ Telescope }}
+  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' } 
+
 "{{ File Management }}
-    Plug 'mhinz/vim-startify'
+  Plug 'mhinz/vim-startify'
 
-    Plug 'neovim/nvim-lspconfig'
-    Plug 'kabouzeid/nvim-lspinstall'
-    Plug 'glepnir/lspsaga.nvim'
-    Plug 'hrsh7th/nvim-compe'
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-    Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+  " Surround.vim is all about surrounding stuff
+  " https://github.com/tpope/vim-surround
+  Plug 'tpope/vim-surround'
 
-    Plug 'glepnir/galaxyline.nvim', { 'branch': 'main' }
-    Plug 'kyazdani42/nvim-web-devicons'  " needed for galaxyline icons
+  " Enhances vim-surround
+  " https://github.com/tpope/vim-ragtag
+  Plug 'tpope/vim-ragtag'
 
-    Plug 'tpope/vim-ragtag'
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-unimpaired'
+  " Vim sugar for the UNIX shell commands that need it the most.
+  " https://github.com/tpope/vim-eunuch
+  Plug 'tpope/vim-eunuch'
 
-    Plug 'tpope/vim-eunuch'
-    Plug 'tpope/vim-fugitive'
+  " Fugitive is the premier Vim plugin for Git.
+  " https://github.com/tpope/vim-fugitive
+  Plug 'tpope/vim-fugitive'
+
+  " Comment stuff out
+  " https://github.com/tpope/vim-commentary
+  Plug 'tpope/vim-commentary'
 
 call plug#end()
 
 colorscheme gruvbox
 set background=dark
+
+" Include lua plugin configuration files
+lua require('mds')
 
 " >>>>>>>>>>>>>>>>>>>>>>>>
 " >> Telescope bindings >>
@@ -124,8 +142,6 @@ vnoremap K :m '<-2<CR>gv=gv
 " ---------------------------------------
 vnoremap <leader>p "_dP
 
-nnoremap <leader>t :50vnew ~/.telescope-shortcuts<CR>
-
 noremap <silent> <C-Left> :vertical resize +3<CR>
 noremap <silent> <C-Right> :vertical resize -3<CR>
 noremap <silent> <C-Up> :resize +3<CR>
@@ -155,7 +171,6 @@ let g:startify_custom_header = [
 let g:startify_bookmarks = [
             \ { 'n': '~/.config/nvim/init.vim' },
             \ { 'b': '~/.bashrc' },
-            \ { 't': '~/.telescope-shortcuts' },
             \ { 'x': '~/.xmonad/xmonad.hs' },
             \ ]
 
