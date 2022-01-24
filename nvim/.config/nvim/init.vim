@@ -49,9 +49,6 @@ set termguicolors
 set noshowmode
 set signcolumn=number
 
-"set colorcolumn=80
-"highlight ColorColumn ctermbg=Yellow guibg=Yellow
-
 " ------------
 " Vim Plugins
 " ------------
