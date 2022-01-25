@@ -201,6 +201,10 @@ pcd () {
     cd "/home/martin/Projects/Vue/Work/PuzzleBouts"
 }
 
+pcdv () {
+  cd "home/martin/Projects/Vue/Work/PuzzleBouts-Vite"
+}
+
 
 # DIFF_TIME=$(awk 'BEGIN { print strftime("%H",systime()) }')
 # REAL_TIME=$(($DIFF_TIME - 1))
