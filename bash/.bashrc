@@ -202,7 +202,7 @@ pcd () {
 }
 
 pcdv () {
-  cd "home/martin/Projects/Vue/Work/PuzzleBouts-Vite"
+  cd "/home/martin/Projects/Vue/Work/PuzzleBouts-Vite"
 }
 
 
