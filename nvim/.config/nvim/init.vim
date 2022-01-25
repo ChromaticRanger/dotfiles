@@ -66,6 +66,19 @@ call plug#begin()
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' } 
 
+"{{ Language Server Protocol }}
+  Plug 'neovim/nvim-lspconfig'
+
+"{{ Autocompletion }}
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'L3MON4D3/LuaSnip'
+  Plug 'saadparwaiz1/cmp_luasnip'
+  Plug 'onsails/lspkind-nvim'
+
+"{{ Treesitter }}
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+
 "{{ File Management }}
   Plug 'mhinz/vim-startify'
 
@@ -91,7 +104,6 @@ call plug#begin()
   " Comment stuff out
   " https://github.com/tpope/vim-commentary
   Plug 'tpope/vim-commentary'
-
 
 call plug#end()
 
@@ -192,27 +204,4 @@ nnoremap N Nzz
 nnoremap <leader>cx :nohl<CR> 
 
 :se nohlsearch
-
-" >> Lsp key bindings
-nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> <C-]> <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> gD    <cmd>lua vim.lsp.buf.declaration()<CR>
-nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
-nnoremap <silent> gi    <cmd>lua vim.lsp.buf.implementation()<CR>
-nnoremap <silent> K     <cmd>Lspsaga hover_doc<CR>
-nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
-nnoremap <silent> <C-p> <cmd>Lspsaga diagnostic_jump_prev<CR>
-nnoremap <silent> <C-n> <cmd>Lspsaga diagnostic_jump_next<CR>
-nnoremap <silent> gf    <cmd>lua vim.lsp.buf.formatting()<CR>
-nnoremap <silent> gn    <cmd>lua vim.lsp.buf.rename()<CR>
-nnoremap <silent> ga    <cmd>Lspsaga code_action<CR>
-xnoremap <silent> ga    <cmd>Lspsaga range_code_action<CR>
-nnoremap <silent> gs    <cmd>Lspsaga signature_help<CR>
-
-"lua <<EOF
-"require("lsp")
-"require("treesitter")
-"require("statusbar")
-"require("completion")
-"EOF
 
