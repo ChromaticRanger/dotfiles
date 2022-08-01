@@ -16,6 +16,7 @@ import XMonad.Hooks.DynamicLog
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
+import qualified XMonad.Util.Hacks as Hacks
 
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
@@ -201,7 +202,7 @@ myManageHook = composeAll
 -- return (All True) if the default handler is to be run afterwards. To
 -- combine event hooks use mappend or mconcat from Data.Monoid.
 --
-myEventHook = mempty
+-- myEventHook = mempty
 
 ------------------------------------------------------------------------
 -- Status bars and logging
@@ -246,25 +247,26 @@ main = xmonad =<< statusBar myBar myPP toggleStrutsKey defaults
 --
 defaults = def {
       -- simple stuff
-        terminal           = myTerminal,
-        focusFollowsMouse  = myFocusFollowsMouse,
-        clickJustFocuses   = myClickJustFocuses,
-        borderWidth        = myBorderWidth,
-        modMask            = myModMask,
-        workspaces         = myWorkspaces,
-        normalBorderColor  = myNormalBorderColor,
+        terminal = myTerminal,
+        focusFollowsMouse = myFocusFollowsMouse,
+        clickJustFocuses = myClickJustFocuses,
+        borderWidth = myBorderWidth,
+        modMask = myModMask,
+        workspaces = myWorkspaces,
+        normalBorderColor = myNormalBorderColor,
         focusedBorderColor = myFocusedBorderColor,
 
       -- key bindings
-        keys               = myKeys,
-        mouseBindings      = myMouseBindings,
+        keys = myKeys,
+        mouseBindings = myMouseBindings,
 
       -- hooks, layouts
-        layoutHook         = myLayout,
-        manageHook         = myManageHook,
-        handleEventHook    = myEventHook,
-        logHook            = myLogHook,
-        startupHook        = myStartupHook
+        layoutHook = myLayout,
+        manageHook = myManageHook,
+        -- handleEventHook     = myEventHook,
+        handleEventHook = handleEventHook def <> Hacks.windowedFullscreenFixEventHook,
+        logHook = myLogHook,
+        startupHook = myStartupHook
     }
 
 -- | Finally, a copy of the default bindings in simple textual tabular format.
