@@ -79,6 +79,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     	, ((modm .|. controlMask, xK_l), spawn "slock")                         -- launch slock
     	, ((modm .|. controlMask, xK_b), spawn "blender")                       -- launch blender
     	, ((modm .|. controlMask, xK_c), spawn "cat ~/Documents/dmenu-confs/cheatsheets.conf | dmenu -l 30 | sed 's/.*  \\+//' | sh") -- launch cheatsheet list in dmenu
+    	, ((modm .|. controlMask, xK_a), spawn "cat ~/Documents/dmenu-confs/apps.conf | dmenu -l 30 | sed 's/.*  \\+//' | sh") -- launch apps list in dmenu
 
 	-- Window Management
     	, ((modm, xK_space), sendMessage NextLayout)				                    -- Rotate through the available layout algorithms
