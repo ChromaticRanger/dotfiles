@@ -74,31 +74,32 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     	, ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume @DEFAULT_SINK@ +10%")
 
 	-- Applications
-    	, ((modm .|. controlMask, xK_w), spawn "chromium")			-- launch chromium
-    	, ((modm .|. controlMask, xK_p), spawn "dmenu_run")			-- launch dmenu
-    	, ((modm .|. controlMask, xK_l), spawn "slock")				-- launch slock
-    	, ((modm .|. controlMask, xK_b), spawn "blender")			-- launch blender
+    	, ((modm .|. controlMask, xK_w), spawn "chromium")                      -- launch chromium
+    	, ((modm .|. controlMask, xK_p), spawn "dmenu_run")                     -- launch dmenu
+    	, ((modm .|. controlMask, xK_l), spawn "slock")                         -- launch slock
+    	, ((modm .|. controlMask, xK_b), spawn "blender")                       -- launch blender
+    	, ((modm .|. controlMask, xK_c), spawn "cat ~/Documents/dmenu-confs/cheatsheets.conf | dmenu -l 30 | sed 's/.*  \\+//' | sh") -- launch cheatsheet list in dmenu
 
 	-- Window Management
-    	, ((modm, xK_space), sendMessage NextLayout)				-- Rotate through the available layout algorithms
-    	, ((modm .|. shiftMask, xK_c), kill)					-- close focused window
-    	, ((modm, xK_n), refresh)						-- Resize viewed windows to the correct size
-      , ((modm, xK_Tab), windows W.focusDown)					-- Move focus to the next window
-      , ((modm, xK_j), windows W.focusDown)					-- Move focus to the next window
-      , ((modm, xK_k), windows W.focusUp)					-- Move focus to the previous window
-      , ((modm, xK_m), windows W.focusMaster)					-- Move focus to the master window
-      , ((modm, xK_Return), windows W.swapMaster)				-- Swap the focused window and the master window
-      , ((modm .|. shiftMask, xK_j), windows W.swapDown)			-- Swap the focused window with the next window
-      , ((modm .|. shiftMask, xK_k), windows W.swapUp)			-- Swap the focused window with the previous window
-      , ((modm, xK_h), sendMessage Shrink)					-- Shrink the master area
-      , ((modm, xK_l), sendMessage Expand)					-- Expand the master area
-      , ((modm, xK_t), withFocused $ windows . W.sink)			-- Push window back into tiling
-      , ((modm, xK_comma), sendMessage (IncMasterN 1))			-- Increment the number of windows in the master area
-      , ((modm, xK_period), sendMessage (IncMasterN (-1)))			-- Deincrement the number of windows in the master area
+    	, ((modm, xK_space), sendMessage NextLayout)				                    -- Rotate through the available layout algorithms
+    	, ((modm .|. shiftMask, xK_c), kill)					                          -- close focused window
+    	, ((modm, xK_n), refresh)						                                    -- Resize viewed windows to the correct size
+      , ((modm, xK_Tab), windows W.focusDown)					                        -- Move focus to the next window
+      , ((modm, xK_j), windows W.focusDown)					                          -- Move focus to the next window
+      , ((modm, xK_k), windows W.focusUp)					                            -- Move focus to the previous window
+      , ((modm, xK_m), windows W.focusMaster)					                        -- Move focus to the master window
+      , ((modm, xK_Return), windows W.swapMaster)				                      -- Swap the focused window and the master window
+      , ((modm .|. shiftMask, xK_j), windows W.swapDown)			                -- Swap the focused window with the next window
+      , ((modm .|. shiftMask, xK_k), windows W.swapUp)			                  -- Swap the focused window with the previous window
+      , ((modm, xK_h), sendMessage Shrink)					                          -- Shrink the master area
+      , ((modm, xK_l), sendMessage Expand)					                          -- Expand the master area
+      , ((modm, xK_t), withFocused $ windows . W.sink)			                  -- Push window back into tiling
+      , ((modm, xK_comma), sendMessage (IncMasterN 1))			                  -- Increment the number of windows in the master area
+      , ((modm, xK_period), sendMessage (IncMasterN (-1)))			              -- Deincrement the number of windows in the master area
     	, ((modm .|. shiftMask, xK_space), setLayout $ XMonad.layoutHook conf)	-- Reset the layouts on the current workspace to default
 	
-      , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess)) 	-- Quit xmonad
-      , ((modm, xK_q), spawn "xmonad --recompile; xmonad --restart") 	-- Restart xmonad
+      , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess))               -- Quit xmonad
+      , ((modm, xK_q), spawn "xmonad --recompile; xmonad --restart") 	        -- Restart xmonad
 
 	-- Toggle the status bar gap
 	-- Use this binding with avoidStruts from Hooks.ManageDocks.
