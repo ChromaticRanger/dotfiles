@@ -18,6 +18,8 @@ import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 import qualified XMonad.Util.Hacks as Hacks
 
+import XMonad.Hooks.WindowSwallowing
+
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
@@ -80,6 +82,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     	, ((modm .|. controlMask, xK_b), spawn "blender")                       -- launch blender
     	, ((modm .|. controlMask, xK_c), spawn "cat ~/Documents/dmenu-confs/cheatsheets.conf | dmenu -l 30 | sed 's/.*  \\+//' | sh") -- launch cheatsheet list in dmenu
     	, ((modm .|. controlMask, xK_a), spawn "cat ~/Documents/dmenu-confs/apps.conf | dmenu -l 30 | sed 's/.*  \\+//' | sh") -- launch apps list in dmenu
+    	, ((modm .|. controlMask, xK_u), spawn "cat ~/Documents/dmenu-confs/utils.conf | dmenu -l 30 | sed 's/.*  \\+//' | sh") -- launch utils list in dmenu
 
 	-- Window Management
     	, ((modm, xK_space), sendMessage NextLayout)				                    -- Rotate through the available layout algorithms
@@ -234,6 +237,8 @@ myPP = xmobarPP { ppCurrent = xmobarColor "#a855f7" "" . wrap "<" ">" }
 -- Key binding to toggle the gap for the bar.
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
+myHandleEventHook = swallowEventHook (className =? "Alacritty" <||> className =? "Termite") (return True)
+
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
@@ -265,8 +270,8 @@ defaults = def {
       -- hooks, layouts
         layoutHook = myLayout,
         manageHook = myManageHook,
-        -- handleEventHook     = myEventHook,
-        handleEventHook = handleEventHook def <> Hacks.windowedFullscreenFixEventHook,
+        -- handleEventHook = myHandleEventHook,
+        handleEventHook = myHandleEventHook <+> handleEventHook def <> Hacks.windowedFullscreenFixEventHook,
         logHook = myLogHook,
         startupHook = myStartupHook
     }
