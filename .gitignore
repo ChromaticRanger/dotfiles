@@ -1,3 +1,10 @@
 .bash_history
 newsboat/.newsboat/cache.db
 nvim/.config/nvim/plugged/
+
+xmonad.o
+xmonad.hi
+xmonad.errors
+xmonad-x86_64-linux
+build-x86_64-linux
+

@@ -52,6 +52,8 @@ set signcolumn=number
 " ------------
 " Vim Plugins
 " ------------
+"  '~/.local/share/nvim/site/autoload/plug.vim'
+"
 call plug#begin()
 
 "{{ Color Scheme }}
@@ -65,6 +67,9 @@ call plug#begin()
 "{{ Telescope }}
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' } 
+
+"{{ Emmet }}
+  Plug 'mattn/emmet-vim'
 
 "{{ Language Server Protocol }}
   Plug 'neovim/nvim-lspconfig'

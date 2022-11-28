@@ -101,7 +101,8 @@ fi
 unset use_color safe_term match_lhs sh
 
 # System Maintenance
-alias sdn="sudo shutdown now"
+alias sdn="shutdown -h now"
+alias mnt="sudo mount -t ext4 /dev/sdb1 ~/SanDisk/"
 
 # Some aliases
 alias p="sudo pacman"
@@ -126,9 +127,11 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 alias cls="clear"
-alias zathura="zathura"
+alias za="zathura"
 alias mpv="mpv"
 alias sxiv="sxiv"
+alias serve-this="python3 -m http.server"
+alias keyboard="setxkbmap gb"
 
 # Git aliases
 alias gs="gfr && git status "
