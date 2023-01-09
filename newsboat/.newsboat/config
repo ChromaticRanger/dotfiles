@@ -1,6 +1,7 @@
 #show-read-feeds no
+prepopulate-query-feeds yes
+run-on-startup select-tag
 auto-reload yes
-max-items 100
 
 external-url-viewer "urlscan -dc -r 'chromium {}'"
 
@@ -28,7 +29,6 @@ download-path "~/Music/Podcasts/"
 player "devour mpv"
 
 confirm-exit yes
-tag-select-start yes
 show-title-bar yes
 show-read-feeds no
 
