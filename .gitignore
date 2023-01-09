@@ -2,9 +2,10 @@
 newsboat/.newsboat/cache.db
 nvim/.config/nvim/plugged/
 
-xmonad.o
+xmonad/.xmonad/build-x86_64-linux/Main.hi
+xmonad/.xmonad/build-x86_64-linux/Main.o
+xmonad/.xmonad/xmonad-x86_64-linux
 xmonad.hi
 xmonad.errors
-xmonad-x86_64-linux
 build-x86_64-linux
 
