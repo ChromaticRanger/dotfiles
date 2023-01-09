@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/martin/_OneDrive'
+let g:netrw_dirhist_2='/home/martin/Projects/PuzzleBouts'
+let g:netrw_dirhist_1='/home/martin/Projects/Vue/Intro-to-Vue-3'
+let g:netrw_dirhist_0='/usr/share/terminfo'
+let g:netrw_dirhist_9='/home/martin/Projects/Vue/cli-starter/using-gui'
+let g:netrw_dirhist_8='/home/martin'
+let g:netrw_dirhist_7='/home/martin/Projects/Vue/cli-starter/hello-world'
+let g:netrw_dirhist_6='/home/martin/Projects/Gridsome/gridsome-typscript'
+let g:netrw_dirhist_5='/home/martin/dotfiles/newsboat/.newsboat'
+let g:netrw_dirhist_4='/home/martin/Projects/Python'
