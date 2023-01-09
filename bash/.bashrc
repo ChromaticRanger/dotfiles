@@ -139,7 +139,7 @@ alias gaa="git add -A "
 alias gb="git branch "
 alias gc="git commit "
 alias gcm="git commit -m "
-alias go="git checkout "
+alias gco="git checkout "
 alias gpr="git push origin main "
 alias gfr="git fetch origin main "
 alias ga!="gaa && gcm "
@@ -204,7 +204,7 @@ pcd () {
 }
 
 pcdv () {
-  cd "/home/martin/Projects/Vue/Work/PuzzleBouts-Vite"
+  cd "/home/martin/Projects/Vue/Work/Vite/PuzzleBouts-Vite"
 }
 
 
