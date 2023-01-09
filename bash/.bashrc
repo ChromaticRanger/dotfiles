@@ -105,7 +105,6 @@ alias sdn="shutdown -h now"
 alias mnt="sudo mount -t ext4 /dev/sdb1 ~/SanDisk/"
 
 # Some aliases
-alias p="sudo pacman"
 alias pa="sudo pacman -Syu"
 alias SS="sudo systemctl"
 alias nv="nvim"
