@@ -1,0 +1,27 @@
+super + Escape
+  pkill -USR1 -x sxhkd
+
+super + Return
+  kitty
+
+super + shift + q
+  i3-msg kill
+
+super + w
+  firefox-developer-edition
+
+super + ctrl + w
+  chromium
+
+super + p
+  dmenu_recency
+
+super + m
+  kitty -e mocp
+
+# ------
+# scrot
+# ------
+super + shift + p
+  i3-msg i3-scrot
+
